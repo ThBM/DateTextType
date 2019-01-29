@@ -12,19 +12,10 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class DateTextType extends AbstractType
 {
-    /**
-     * @var DateStringParserTransform
-     */
-    private $transform;
-    public function __construct(DateStringParserTransform $transform)
-    {
-        $this->transform = $transform;
-    }
-
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
-        $builder->addModelTransformer($this->transform);
+        $builder->addModelTransformer(new DateStringParserTransform());
 
     }
     public function configureOptions(OptionsResolver $resolver)
