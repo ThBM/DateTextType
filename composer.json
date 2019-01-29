@@ -1,0 +1,30 @@
+{
+    "name": "thbm/datetexttype-bundle",
+    "type": "symfony-bundle",
+    "description": "Form type for date with french format",
+    "keywords": [
+        "french",
+        "date",
+		"parser",
+		"symfony",
+		"form type"
+    ],
+    "homepage": "https://github.com/ThBM/DateTextTypeBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thibault Barolat-Massole",
+            "email": "thibault.barolatmassole@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "symfony/form": "^4.0",
+		"thbm/date-parser": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ThBM\\DateTextTypeBundle\\": ""
+        }
+    }
+}
