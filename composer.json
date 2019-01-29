@@ -1,5 +1,5 @@
 {
-    "name": "thbm/datetexttype-bundle",
+    "name": "thbm/datetexttype",
     "type": "symfony-bundle",
     "description": "Form type for date with french format",
     "keywords": [
